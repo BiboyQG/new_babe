@@ -8,6 +8,8 @@ def analyze_data_files():
 
     # Get list of all CSV and XLSX files in the data folder
     files = [f for f in os.listdir(data_folder) if f.endswith((".csv", ".xlsx"))]
+    # Exclude files that contain "to_be_calculated"
+    files = [f for f in files if "to_be_calculated" not in f]
     files.sort()  # Sort files alphabetically
 
     with open(output_file, "w") as f:
@@ -95,5 +97,60 @@ def analyze_data_files():
     print(f"Analysis completed. Results saved to {output_file}")
 
 
+def calculate_inflation_rate(file_path):
+    # Read the Excel file
+    df = pd.read_excel(file_path)
+
+    # Rename columns for clarity
+    df.columns = ["date", "index"]    
+
+    # Calculate month-over-month inflation rate
+    # Formula: (Current Month CPI Index - Previous Month CPI Index) / Previous Month CPI Index
+    df["inflation_rate"] = (
+        (df["index"] - df["index"].shift(1)) / df["index"].shift(1)
+    )
+
+    # Replace index column with inflation_rate
+    df["index"] = df["inflation_rate"]
+
+    # Drop the inflation_rate column as we've moved its values to index
+    df = df.drop(columns=["inflation_rate"])
+
+    # Delete the first row (index 0) as required
+    df = df.drop(0)
+    df = df.reset_index(drop=True)
+
+    # Create new file path while replacing "to_be_calculated" with "calculated" before the extension
+    file_name, file_ext = os.path.splitext(file_path)
+    output_file_path = (
+        f"{file_name.replace('to_be_calculated', 'calculated')}{file_ext}"
+    )
+
+    # Save the modified data to the new file
+    df.to_excel(output_file_path, index=False)
+
+    return df, output_file_path
+
+
+def main():
+    # Define the data directory
+    data_dir = "data"
+
+    # Process the files
+    files = [
+        "cn_inflation_rate_to_be_calculated_2023.01.01-2023.12.01.xlsx",
+        "cn_inflation_rate_to_be_calculated_2023.06.01-2024.06.01.xlsx",
+    ]
+
+    for file in files:
+        file_path = os.path.join(data_dir, file)
+        print(f"Processing {file}...")
+        result_df, output_path = calculate_inflation_rate(file_path)
+        print(f"First 5 rows after processing:\n{result_df.head()}")
+        print(f"Saved modified data to {output_path}")
+        print("=" * 50)
+
+
 if __name__ == "__main__":
+    main()
     analyze_data_files()

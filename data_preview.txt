@@ -1,0 +1,424 @@
+# Data Files Analysis
+
+This file contains a preview of all CSV and XLSX files in the data folder.
+
+
+================================================================================
+## File: cn_inflation_rate_calculated_2023.01.01-2023.12.01.xlsx
+================================================================================
+
+### Basic Information
+- File size: 5.16 KB
+- Shape: 12 rows × 2 columns
+
+### Columns
+- **date**: datetime64[ns]
+- **index**: float64
+
+### Descriptive Statistics for Numerical Columns
+           index
+count  12.000000
+mean   -0.001728
+std     0.004061
+min    -0.010774
+25%    -0.003002
+50%    -0.001998
+75%     0.001252
+max     0.004012
+
+### First 5 Rows
+        date     index
+0 2023-01-01  0.002947
+1 2023-02-01 -0.010774
+2 2023-03-01 -0.002970
+3 2023-04-01 -0.005958
+4 2023-05-01  0.000999
+
+### Date Range
+- **date**: 2023-01-01 00:00:00 to 2023-12-01 00:00:00
+
+
+================================================================================
+## File: cn_inflation_rate_calculated_2023.06.01-2024.06.01.xlsx
+================================================================================
+
+### Basic Information
+- File size: 5.15 KB
+- Shape: 12 rows × 2 columns
+
+### Columns
+- **date**: datetime64[ns]
+- **index**: float64
+
+### Descriptive Statistics for Numerical Columns
+           index
+count  12.000000
+mean    0.000097
+std     0.005562
+min    -0.005958
+25%    -0.003002
+50%    -0.001498
+75%     0.002001
+max     0.015121
+
+### First 5 Rows
+        date     index
+0 2023-06-01 -0.001996
+1 2023-07-01 -0.003000
+2 2023-08-01  0.004012
+3 2023-09-01 -0.000999
+4 2023-10-01 -0.002000
+
+### Date Range
+- **date**: 2023-06-01 00:00:00 to 2024-05-01 00:00:00
+
+
+================================================================================
+## File: cn_interest_rate_DR007_2023.01.01-2023.12.31.csv
+================================================================================
+
+File successfully read with encoding: gbk
+### Basic Information
+- File size: 3.61 KB
+- Shape: 243 rows × 2 columns
+
+### Columns
+- **DateTime**: object
+- **OPEN**: float64
+
+### Descriptive Statistics for Numerical Columns
+             OPEN
+count  242.000000
+mean     1.907686
+std      0.089815
+min      1.800000
+25%      1.800000
+50%      1.900000
+75%      2.000000
+max      2.000000
+
+### First 5 Rows
+     DateTime  OPEN
+0  2023-01-03   2.0
+1  2023-01-04   2.0
+2  2023-01-05   2.0
+3  2023-01-06   2.0
+4  2023-01-09   2.0
+
+### Date Range
+- **DateTime**: 2023-01-03 00:00:00 to 2023-12-29 00:00:00
+
+
+================================================================================
+## File: cn_interest_rate_DR007_2023.06.01-2024.06.01.csv
+================================================================================
+
+File successfully read with encoding: gbk
+### Basic Information
+- File size: 3.81 KB
+- Shape: 243 rows × 2 columns
+
+### Columns
+- **DateTime**: object
+- **OPEN**: float64
+
+### Descriptive Statistics for Numerical Columns
+             OPEN
+count  242.000000
+mean     1.827934
+std      0.052670
+min      1.800000
+25%      1.800000
+50%      1.800000
+75%      1.800000
+max      2.000000
+
+### First 5 Rows
+     DateTime  OPEN
+0  2023-06-01   2.0
+1  2023-06-02   2.0
+2  2023-06-05   2.0
+3  2023-06-06   2.0
+4  2023-06-07   2.0
+
+### Date Range
+- **DateTime**: 2023-06-01 00:00:00 to 2024-05-31 00:00:00
+
+
+================================================================================
+## File: cn_oil_price_SC00.INE_2023.01.01-2023.12.31.csv
+================================================================================
+
+File successfully read with encoding: gbk
+### Basic Information
+- File size: 4.34 KB
+- Shape: 251 rows × 2 columns
+
+### Columns
+- **DateTime**: object
+- **CLOSE**: float64
+
+### Descriptive Statistics for Numerical Columns
+            CLOSE
+count  250.000000
+mean   585.016800
+std     64.484677
+min    476.600000
+25%    533.900000
+50%    565.650000
+75%    630.650000
+max    743.700000
+
+### First 5 Rows
+     DateTime  CLOSE
+0  2023-01-03  567.1
+1  2023-01-04  538.0
+2  2023-01-05  520.1
+3  2023-01-06  527.5
+4  2023-01-09  525.8
+
+### Date Range
+- **DateTime**: 2023-01-03 00:00:00 to 2023-12-29 00:00:00
+
+
+================================================================================
+## File: cn_oil_price_SC00.INE_2023.06.01-2024.06.01.csv
+================================================================================
+
+File successfully read with encoding: gbk
+### Basic Information
+- File size: 4.39 KB
+- Shape: 253 rows × 2 columns
+
+### Columns
+- **DateTime**: object
+- **CLOSE**: float64
+
+### Descriptive Statistics for Numerical Columns
+            CLOSE
+count  252.000000
+mean   612.288095
+std     55.144336
+min    505.900000
+25%    566.150000
+50%    610.000000
+75%    654.125000
+max    743.700000
+
+### First 5 Rows
+     DateTime  CLOSE
+0  2023-06-01  505.9
+1  2023-06-02  518.3
+2  2023-06-05  527.8
+3  2023-06-06  525.0
+4  2023-06-07  523.7
+
+### Date Range
+- **DateTime**: 2023-06-01 00:00:00 to 2024-05-31 00:00:00
+
+
+================================================================================
+## File: us_inflation_rate_calculated_2023.01.01-2023.12.31.xlsx
+================================================================================
+
+### Basic Information
+- File size: 41.16 KB
+- Shape: 12 rows × 2 columns
+
+### Columns
+- **Unnamed: 0**: datetime64[ns]
+- **PCEPI：2017年价格：SA：环比百分比**: float64
+
+### Descriptive Statistics for Numerical Columns
+       PCEPI：2017年价格：SA：环比百分比
+count                12.00000
+mean                  0.20000
+std                   0.14771
+min                   0.00000
+25%                   0.10000
+50%                   0.20000
+75%                   0.30000
+max                   0.50000
+
+### First 5 Rows
+  Unnamed: 0  PCEPI：2017年价格：SA：环比百分比
+0 2023-01-01                     0.5
+1 2023-02-01                     0.3
+2 2023-03-01                     0.1
+3 2023-04-01                     0.3
+4 2023-05-01                     0.1
+
+
+================================================================================
+## File: us_inflation_rate_calculated_2023.06.01-2024.06.01.xlsx
+================================================================================
+
+### Basic Information
+- File size: 29.65 KB
+- Shape: 12 rows × 2 columns
+
+### Columns
+- **Unnamed: 0**: datetime64[ns]
+- **PCEPI：2017年价格：SA：环比百分比**: float64
+
+### Descriptive Statistics for Numerical Columns
+       PCEPI：2017年价格：SA：环比百分比
+count               12.000000
+mean                 0.200000
+std                  0.141421
+min                  0.000000
+25%                  0.075000
+50%                  0.250000
+75%                  0.300000
+max                  0.400000
+
+### First 5 Rows
+  Unnamed: 0  PCEPI：2017年价格：SA：环比百分比
+0 2023-06-01                     0.2
+1 2023-07-01                     0.1
+2 2023-08-01                     0.3
+3 2023-09-01                     0.3
+4 2023-10-01                     0.0
+
+
+================================================================================
+## File: us_interest_rate_GCM24E_real_ffr.xlsx
+================================================================================
+
+### Basic Information
+- File size: 12.16 KB
+- Shape: 252 rows × 2 columns
+
+### Columns
+- **Effective Date**: object
+- **Rate (%)**: float64
+
+### Descriptive Statistics for Numerical Columns
+         Rate (%)
+count  252.000000
+mean     5.291905
+std      0.090600
+min      5.070000
+25%      5.330000
+50%      5.330000
+75%      5.330000
+max      5.330000
+
+### First 5 Rows
+  Effective Date  Rate (%)
+0     05/31/2024      5.33
+1     05/30/2024      5.33
+2     05/29/2024      5.33
+3     05/28/2024      5.33
+4     05/24/2024      5.33
+
+### Date Range
+- **Effective Date**: 2023-06-01 00:00:00 to 2024-05-31 00:00:00
+
+
+================================================================================
+## File: us_interest_rate_GCZ23E_real_ffr.xlsx
+================================================================================
+
+### Basic Information
+- File size: 12.27 KB
+- Shape: 250 rows × 2 columns
+
+### Columns
+- **Effective Date**: object
+- **Rate (%)**: float64
+
+### Descriptive Statistics for Numerical Columns
+         Rate (%)
+count  250.000000
+mean     5.026200
+std      0.337222
+min      4.330000
+25%      4.830000
+50%      5.080000
+75%      5.330000
+max      5.330000
+
+### First 5 Rows
+  Effective Date  Rate (%)
+0     12/29/2023      5.33
+1     12/28/2023      5.33
+2     12/27/2023      5.33
+3     12/26/2023      5.33
+4     12/22/2023      5.33
+
+### Date Range
+- **Effective Date**: 2023-01-03 00:00:00 to 2023-12-29 00:00:00
+
+
+================================================================================
+## File: us_oil_price_CL00.NYM_2023.01.01-2023.12.31.csv
+================================================================================
+
+File successfully read with encoding: gbk
+### Basic Information
+- File size: 4.16 KB
+- Shape: 253 rows × 2 columns
+
+### Columns
+- **DateTime**: object
+- **CLOSE**: float64
+
+### Descriptive Statistics for Numerical Columns
+            CLOSE
+count  250.000000
+mean    77.637240
+std      6.065923
+min     66.340000
+25%     72.825000
+50%     77.170000
+75%     81.265000
+max     93.710000
+
+### First 5 Rows
+   DateTime  CLOSE
+0  1/3/2023  77.21
+1  1/4/2023  73.22
+2  1/5/2023  73.93
+3  1/6/2023  73.73
+4  1/9/2023  74.87
+
+### Date Range
+- **DateTime**: 2023-01-03 00:00:00 to 2023-12-29 00:00:00
+
+
+================================================================================
+## File: us_oil_price_CL00.NYM_2023.06.01-2024.06.01.csv
+================================================================================
+
+File successfully read with encoding: gbk
+### Basic Information
+- File size: 4.44 KB
+- Shape: 253 rows × 2 columns
+
+### Columns
+- **DateTime**: object
+- **CLOSE**: float64
+
+### Descriptive Statistics for Numerical Columns
+            CLOSE
+count  252.000000
+mean    78.957143
+std      5.802905
+min     67.340000
+25%     74.110000
+50%     78.625000
+75%     82.840000
+max     93.710000
+
+### First 5 Rows
+     DateTime  CLOSE
+0  2023-06-01  70.15
+1  2023-06-02  71.87
+2  2023-06-05  71.91
+3  2023-06-06  71.45
+4  2023-06-07  72.46
+
+### Date Range
+- **DateTime**: 2023-06-01 00:00:00 to 2024-05-31 00:00:00
+

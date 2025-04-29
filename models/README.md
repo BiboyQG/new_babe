@@ -73,6 +73,55 @@ For each region and period, the following outputs are generated:
 - `models/xgboost/{region}/{period}/results_summary.txt`: Summary of model performance
 - `models/xgboost/{region}/{period}/feature_importance_{region}_{period}.csv`: Feature importance analysis
 
+### 3. LSTM
+
+The LSTM (Long Short-Term Memory) model is implemented in `lstm_model.py`. This deep learning sequence model uses the same exogenous variables as the previous models:
+
+- `inflation_index`
+- `interest_OPEN` (CN datasets) / `interest_Rate (%)` (US datasets)
+- `oil_CLOSE`
+
+#### Results
+
+| Region | Period          | Mean Absolute Error | Root Mean Squared Error | Average Difference |
+| ------ | --------------- | ------------------- | ----------------------- | ------------------ |
+| CN     | 2023.01-2023.12 | 12.200084           | 15.265879               | 12.200084          |
+| CN     | 2023.06-2024.06 | 8.574166            | 9.322096                | 8.574166           |
+| US     | 2023.01-2023.12 | 3.413341            | 4.250748                | 3.413341           |
+| US     | 2023.06-2024.06 | 7.033762            | 8.575963                | 7.033762           |
+
+#### Model Details
+
+- Architecture:
+
+  - LSTM layers: 2
+  - Hidden size: 64
+  - Sequence length: 60
+  - Dropout: 0.2
+  - Output: 1 (gap_open prediction)
+
+- Training parameters:
+
+  - Batch size: 64
+  - Learning rate: 0.001
+  - Optimizer: Adam
+  - Loss function: MSE (Mean Squared Error)
+  - Epochs: 100
+  - GPU acceleration: MPS (Metal Performance Shaders) on macOS
+
+- Data preprocessing:
+  - Min-Max scaling for all features and target
+  - Sequence preparation with sliding window approach
+  - PyTorch DataLoader with batching and shuffling
+
+For each region and period, the following outputs are generated:
+
+- `models/lstm/{region}/{period}/lstm_model_{region}_{period}.pt`: Saved PyTorch model with scalers
+- `models/lstm/{region}/{period}/predictions_{region}_{period}.csv`: Predictions on validation data
+- `models/lstm/{region}/{period}/plot_{region}_{period}.png`: Plot of actual vs predicted values
+- `models/lstm/{region}/{period}/training_loss_{region}_{period}.png`: Training loss curve
+- `models/lstm/{region}/{period}/results_summary.txt`: Summary of model performance and hyperparameters
+
 ## Usage
 
 To train and evaluate all ARIMA models:
@@ -85,4 +134,10 @@ To train and evaluate all XGBoost models:
 
 ```python
 python models/xgboost_model.py
+```
+
+To train and evaluate all LSTM models:
+
+```python
+python models/lstm_model.py
 ```

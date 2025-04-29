@@ -13,3 +13,5 @@ test*.ipynb
 test*.json
 
 **/*.pkl
+
+**/*.pt

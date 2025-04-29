@@ -1,0 +1,10 @@
+LSTM Model Results for CN 2023.06-2024.06
+Sequence Length: 60
+Hidden Size: 64
+Number of Layers: 2
+Learning Rate: 0.001
+Epochs: 100
+Batch Size: 64
+Mean Absolute Error: 8.574166
+Root Mean Squared Error: 9.322096
+Average Difference: 8.574166

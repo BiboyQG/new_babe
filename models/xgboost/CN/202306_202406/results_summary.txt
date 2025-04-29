@@ -1,0 +1,10 @@
+XGBoost Model Results for CN 2023.06-2024.06
+Parameters: {'objective': 'reg:squarederror', 'learning_rate': 0.05, 'max_depth': 6, 'min_child_weight': 2, 'subsample': 0.8, 'colsample_bytree': 0.8, 'n_estimators': 200, 'random_state': 42}
+Mean Absolute Error: 2.901246
+Root Mean Squared Error: 3.434522
+Average Difference: 2.901246
+
+Feature Importance:
+inflation_index: 0.478089
+interest_OPEN: 0.342313
+oil_CLOSE: 0.179598

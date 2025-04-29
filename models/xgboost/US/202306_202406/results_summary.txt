@@ -1,0 +1,10 @@
+XGBoost Model Results for US 2023.06-2024.06
+Parameters: {'objective': 'reg:squarederror', 'learning_rate': 0.05, 'max_depth': 6, 'min_child_weight': 2, 'subsample': 0.8, 'colsample_bytree': 0.8, 'n_estimators': 200, 'random_state': 42}
+Mean Absolute Error: 6.469616
+Root Mean Squared Error: 7.491910
+Average Difference: 6.469616
+
+Feature Importance:
+inflation_index: 0.699577
+oil_CLOSE: 0.191969
+interest_Rate (%): 0.108455

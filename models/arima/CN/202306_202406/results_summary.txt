@@ -1,0 +1,5 @@
+ARIMA Model Results for CN 2023.06-2024.06
+Model Order: (2, 1, 2)
+Mean Absolute Error: 1.491706
+Root Mean Squared Error: 2.067563
+Average Difference: 1.491706

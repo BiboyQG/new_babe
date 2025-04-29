@@ -1,0 +1,5 @@
+ARIMA Model Results for US 2023.06-2024.06
+Model Order: (2, 1, 2)
+Mean Absolute Error: 2.957172
+Root Mean Squared Error: 3.717040
+Average Difference: 2.957172

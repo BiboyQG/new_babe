@@ -3,3 +3,7 @@ openpyxl
 numpy
 statsmodels
 xgboost
+matplotlib
+scikit-learn
+torch
+pickle-mixin
